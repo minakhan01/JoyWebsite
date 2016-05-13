@@ -2847,11 +2847,11 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	-webkit-transition: all 1.3s ease;
 	-o-transition: all 1.3s ease;
 	transition: all 1.3s ease;
-	-webkit-transform: translateY(5px) scale(1.05);
-	-moz-transform: translateY(5px) scale(1.05);
-	-ms-transform: translateY(5px) scale(1.05);
-	-o-transform: translateY(5px) scale(1.05);
-	transform: translateY(5px) scale(1.05);
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-o-transform: scale(1.02);
+	transform: scale(1.02);
 }
 
 #slider .container {
@@ -2934,7 +2934,6 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	z-index: 4;
 	background-repeat: no-repeat !important;
 }
-
 
 /* Slider Caption
 -----------------------------------------------------------------*/
@@ -10346,6 +10345,16 @@ blockquote.pull-right {
 	21. Overlays
 -----------------------------------------------------------------*/
 
+.img-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: transparent url('images/grid.png') repeat;
+	-webkit-backface-visibility: hidden;
+}
 
 .overlay {
 	position: absolute;
@@ -10361,6 +10370,7 @@ blockquote.pull-right {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	z-index: 4;
 	background-color: rgba(0,0,0,0.6);
 }
 
